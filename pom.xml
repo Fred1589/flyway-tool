@@ -17,10 +17,22 @@
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
 
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://localhost:8081/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
+
 	<scm>
-		<connection>scm:git:url</connection>
-		<developerConnection>scm:git:url</developerConnection>
-		<url>scm:git:url</url>
+		<connection>scm:git:https://github.com/Fred1589/flyway-tool.git</connection>
+		<developerConnection>scm:git:https://github.com/Fred1589/flyway-tool.git</developerConnection>
+		<url>http://github.com/Fred1589/flyway-tool</url>
+		<tag>HEAD</tag>
 	</scm>
 
 	<dependencies>
